@@ -26,9 +26,8 @@ public class Randoms implements Iterable<Integer> {
         };
     }
 
-    public static int generateRandomIntIntRange(int min, int max) {
-        Random r = new Random();
-        return r.nextInt((max - min) + 1) + min;
+    public int generateRandomIntIntRange(int min, int max) {
+        return random.nextInt((max - min) + 1) + min;
     }
 }
 
